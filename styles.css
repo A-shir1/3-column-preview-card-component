@@ -1,0 +1,197 @@
+:root{
+    --b-org: hsl(31, 77%, 52%);
+    --d-cyan: hsl(184, 100%, 22%);
+    --vd-cyan: hsl(179, 100%, 13%);
+    --t-white: hsla(0, 0%, 100%, 0.75);
+    --vl-gray: hsl(0, 0%, 95%);
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec{
+    width: 24%;
+    height: 28rem;
+}
+
+.wrapper{
+    margin: 2.5rem;
+    margin-bottom: 0;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.heading{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: var(--vl-gray);
+}
+
+.para{
+    color: var(--t-white);
+}
+
+.button{
+    text-decoration: none;
+    background-color: var(--vl-gray);
+    padding: 0.8rem 1.7rem;
+    border-radius: 3rem;
+    transition: 0.2s;
+}
+
+.button:hover{
+    color: var(--vl-gray);
+    border: 2px solid var(--vl-gray);
+    box-sizing: border-box;
+}
+
+.sec1, .butt1:hover{
+    background-color: var(--b-org);
+}
+
+.sec1{
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.butt1{
+    color: var(--b-org);
+}
+
+
+.sec2, .butt2:hover{
+    background-color: var(--d-cyan);
+}
+
+.butt2{
+    color: var(--d-cyan);
+}
+
+.sec3, .butt3:hover{
+    background-color: var(--vd-cyan);
+}
+
+.sec3{
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+
+.butt3{
+    color: var(--vd-cyan);
+}
+
+
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (max-width: 938px){
+    .sec{
+        height: 25rem;
+    }
+    
+    .heading{
+        margin: 0.9rem 0;
+    }
+
+    .para, .button{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 870px){
+    .heading{
+        font-size: 2.1rem;
+    }
+
+    .para, .button{
+        font-size: 0.7rem;
+    }    
+
+    .button{
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media screen and (max-width: 784px){
+    .para, .button{
+        font-size: 0.65rem;
+    }    
+}
+
+@media screen and (max-width: 764px){
+    body{
+        height: auto;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    .sec{
+        width: 20rem;
+        height: 22rem;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+
+    .para, .button{
+        font-size: 0.8rem;
+    }
+
+    .para{
+        line-height: 1.5rem;
+    }
+
+    .button{
+        padding: 0.8rem 1.7rem;
+    }
+
+    .sec1{
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .sec3{
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .sec{
+        width: 19rem;
+    }
+
+    .heading{
+        font-size: 2.1rem;
+    }
+
+    .para, .button{
+        font-size: 0.8rem;
+    }
+}
